@@ -52,35 +52,6 @@ The master branch works with **PyTorch 1.5+**.
 
 ![demo image](resources/seg_demo.gif)
 
-<details open>
-<summary>Major features</summary>
-
-- **Unified Benchmark**
-
-  We provide a unified benchmark toolbox for various semantic segmentation methods.
-
-- **Modular Design**
-
-  We decompose the semantic segmentation framework into different components and one can easily construct a customized semantic segmentation framework by combining different modules.
-
-- **Support of multiple methods out of box**
-
-  The toolbox directly supports popular and contemporary semantic segmentation frameworks, *e.g.* PSPNet, DeepLabV3, PSANet, DeepLabV3+, etc.
-
-- **High efficiency**
-
-  The training speed is faster than or comparable to other codebases.
-
-</details>
-
-## What's New
-
-v0.25.0 was released in 6/2/2022:
-
-- Support PyTorch backend on MLU
-
-Please refer to [changelog.md](docs/en/changelog.md) for details and release history.
-
 ## Installation
 
 Please refer to [get_started.md](docs/en/get_started.md#installation) for installation and [dataset_prepare.md](docs/en/dataset_prepare.md#prepare-datasets) for dataset preparation.
