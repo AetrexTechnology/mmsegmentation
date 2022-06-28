@@ -61,6 +61,7 @@ Please refer to [get_started.md](docs/en/get_started.md#installation) for instal
 Please see [train.md](docs/en/train.md) and [inference.md](docs/en/inference.md) for the basic usage of MMSegmentation.
 There are also tutorials for:
 
+- [configuration](docs/en/tutorials/config.md)
 - [customizing dataset](docs/en/tutorials/customize_datasets.md)
 - [designing data pipeline](docs/en/tutorials/data_pipeline.md)
 - [customizing modules](docs/en/tutorials/customize_models.md)
