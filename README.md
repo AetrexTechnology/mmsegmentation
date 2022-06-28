@@ -68,7 +68,7 @@ MMSegmentation is based on modular design. Developer can only modify configurati
 - [training tricks](docs/en/tutorials/training_tricks.md)
 - [useful tools](docs/en/useful_tools.md)
 
-Please see [train.md](docs/en/train.md) and [inference.md](docs/en/inference.md) for the basic usage of MMSegmentation.
+See [train.md](docs/en/train.md) and [inference.md](docs/en/inference.md) for the basic usage of MMSegmentation.
 
 ## Benchmark and model zoo
 
