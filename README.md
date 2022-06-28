@@ -58,7 +58,7 @@ Please refer to [get_started.md](docs/en/get_started.md#installation) for instal
 
 ## Get Started
 
-mmsegmentation is based on modular design. Developer can only modify configuration templates that contain the modules of data enhancement strategies, backbone networks, loss functions and other different components for actual application scenarios. There are some tutorials for different modular configurations:
+MMSegmentation is based on modular design. Developer can only modify configuration templates that contain the modules of data enhancement strategies, backbone networks, loss functions and other different components for actual application scenarios. There are some tutorials for different modular configurations:
 
 - [configuration](docs/en/tutorials/config.md)
 - [customizing dataset](docs/en/tutorials/customize_datasets.md)
