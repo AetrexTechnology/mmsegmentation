@@ -49,7 +49,7 @@ mim install mmcv-full
 Case a: If you develop and run mmseg directly, install it from source:
 
 ```shell
-git clone https://github.com/open-mmlab/mmsegmentation.git
+git clone [https://github.com/open-mmlab/mmsegmentation.git](https://github.com/AetrexTechnology/mmsegmentation.git)
 cd mmsegmentation
 pip install -v -e .
 # "-v" means verbose, or more output
