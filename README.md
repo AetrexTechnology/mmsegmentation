@@ -58,8 +58,7 @@ Please refer to [get_started.md](docs/en/get_started.md#installation) for instal
 
 ## Get Started
 
-Please see [train.md](docs/en/train.md) and [inference.md](docs/en/inference.md) for the basic usage of MMSegmentation.
-There are also tutorials for:
+mmsegmentation is based on modular design. Developer can only modify configuration templates that contain the modules of data enhancement strategies, backbone networks, loss functions and other different components for actual application scenarios. There are some tutorials for different modular configurations:
 
 - [configuration](docs/en/tutorials/config.md)
 - [customizing dataset](docs/en/tutorials/customize_datasets.md)
@@ -69,7 +68,7 @@ There are also tutorials for:
 - [training tricks](docs/en/tutorials/training_tricks.md)
 - [useful tools](docs/en/useful_tools.md)
 
-A Colab tutorial is also provided. You may preview the notebook [here](demo/MMSegmentation_Tutorial.ipynb) or directly [run](https://colab.research.google.com/github/open-mmlab/mmsegmentation/blob/master/demo/MMSegmentation_Tutorial.ipynb) on Colab.
+Please see [train.md](docs/en/train.md) and [inference.md](docs/en/inference.md) for the basic usage of MMSegmentation.
 
 ## Benchmark and model zoo
 
