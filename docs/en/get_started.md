@@ -69,43 +69,11 @@ The downloading will take several seconds or more, depending on your network env
 
 **Step 2.** Verify the inference demo.
 
-Option (a). If you install mmsegmentation from source, just run the following command.
-
 ```shell
 python demo/image_demo.py demo/demo.png configs/pspnet/pspnet_r50-d8_512x1024_40k_cityscapes.py pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth --device cuda:0 --out-file result.jpg
 ```
 
 You will see a new image `result.jpg` on your current folder, where segmentation masks are covered on all objects.
-
-Option (b). If you install mmsegmentation with pip, open you python interpreter and copy&paste the following codes.
-
-```python
-from mmseg.apis import inference_segmentor, init_segmentor
-import mmcv
-
-config_file = 'pspnet_r50-d8_512x1024_40k_cityscapes.py'
-checkpoint_file = 'pspnet_r50-d8_512x1024_40k_cityscapes_20200605_003338-2966598c.pth'
-
-# build the model from a config file and a checkpoint file
-model = init_segmentor(config_file, checkpoint_file, device='cuda:0')
-
-# test a single image and show the results
-img = 'test.jpg'  # or img = mmcv.imread(img), which will only load it once
-result = inference_segmentor(model, img)
-# visualize the results in a new window
-model.show_result(img, result, show=True)
-# or save the visualization results to image files
-# you can change the opacity of the painted segmentation map in (0, 1].
-model.show_result(img, result, out_file='result.jpg', opacity=0.5)
-
-# test a video and show the results
-video = mmcv.VideoReader('video.mp4')
-for frame in video:
-   result = inference_segmentor(model, frame)
-   model.show_result(frame, result, wait_time=1)
-```
-
-You can modify the code above to test a single image or a video, both of these options can verify that the installation was successful.
 
 ## Customize Installation
 
@@ -137,56 +105,3 @@ pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.1
 ### Install on CPU-only platforms
 
 MMSegmentation can be built for CPU only environment. In CPU mode you can train (requires MMCV version >= 1.4.4), test or inference a model.
-
-### Install on Google Colab
-
-[Google Colab](https://research.google.com/) usually has PyTorch installed,
-thus we only need to install MMCV and MMSegmentation with the following commands.
-
-**Step 1.** Install [MMCV](https://github.com/open-mmlab/mmcv) using [MIM](https://github.com/open-mmlab/mim).
-
-```shell
-!pip3 install openmim
-!mim install mmcv-full
-```
-
-**Step 2.** Install MMSegmentation from the source.
-
-```shell
-!git clone https://github.com/open-mmlab/mmsegmentation.git
-%cd mmsegmentation
-!pip install -e .
-```
-
-**Step 3.** Verification.
-
-```python
-import mmseg
-print(mmseg.__version__)
-# Example output: 0.24.1
-```
-
-```{note}
-Within Jupyter, the exclamation mark `!` is used to call external executables and `%cd` is a [magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-cd) to change the current working directory of Python.
-```
-
-### Using MMSegmentation with Docker
-
-We provide a [Dockerfile](https://github.com/open-mmlab/mmsegmentation/blob/master/docker/Dockerfile) to build an image. Ensure that your [docker version](https://docs.docker.com/engine/install/) >=19.03.
-
-```shell
-# build an image with PyTorch 1.11, CUDA 11.3
-# If you prefer other versions, just modified the Dockerfile
-docker build -t mmsegmentation docker/
-```
-
-Run it with
-
-```shell
-docker run --gpus all --shm-size=8g -it -v {DATA_DIR}:/mmsegmentation/data mmsegmentation
-```
-
-## Trouble shooting
-
-If you have some issues during the installation, please first view the [FAQ](faq.md) page.
-You may [open an issue](https://github.com/open-mmlab/mmsegmentation/issues/new/choose) on GitHub if no solution is found.
