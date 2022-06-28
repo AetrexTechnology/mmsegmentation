@@ -46,21 +46,13 @@ mim install mmcv-full
 
 **Step 1.** Install MMSegmentation.
 
-Case a: If you develop and run mmseg directly, install it from source:
-
 ```shell
-git clone [https://github.com/open-mmlab/mmsegmentation.git](https://github.com/AetrexTechnology/mmsegmentation.git)
+git clone https://github.com/AetrexTechnology/mmsegmentation.git
 cd mmsegmentation
 pip install -v -e .
 # "-v" means verbose, or more output
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
-```
-
-Case b: If you use mmsegmentation as a dependency or third-party package, install it with pip:
-
-```shell
-pip install mmsegmentation
 ```
 
 ## Verify the installation
