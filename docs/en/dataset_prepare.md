@@ -24,7 +24,7 @@ mmsegmentation
 
 ```
 
-The example of an annotated RGB image and its segmentation annotation is given as follows:
+The example of an annotated RGB image (xxx.png) and its segmentation annotation (xxx_ann.png) is given as follows:
 
 ![RGB](../../resources/feet_imgs/Tia_scan3_left_front_segmentation.png)
 ![ANN](../../resources/feet_imgs/Tia_scan3_left_front_ann.png)
