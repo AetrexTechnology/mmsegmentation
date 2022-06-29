@@ -19,8 +19,7 @@ mmsegmentation
 │   │   ├── val_set
 │   │   │   ├── images
 │   │   │   ├── annotations
-│   |   ├── train_list.txt
-│   │   ├── val_list.txt
+│   |   |
 
 ```
 
