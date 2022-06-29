@@ -24,7 +24,9 @@ mmsegmentation
 
 ```
 
-The example of an original RGB image and its segmentation annotation is given as follows:
+The example of an annotated RGB image and its segmentation annotation is given as follows:
 
 ![RGB](../../resources/feet_imgs/Tia_scan3_left_front_segmentation.png)
 ![ANN](../../resources/feet_imgs/Tia_scan3_left_front_ann.png)
+
+The annotation image contains two classes, 0 for background and 1 for foreground, which have been converted to pseudo color for visualization.
