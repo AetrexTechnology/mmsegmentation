@@ -33,7 +33,7 @@ Some segmentation results are shown below:
 
 ![arch1](../../resources/feet_imgs/Ted_scan4_right_front_arch.png)
 ![arch2](../../resources/feet_imgs/Tony_R_scan2_right_back_arch.png)
-![arch3](../../resources/feet_imgs/Wendy_scan4_right_front_arch.png)
+![arch3](../../resources/feet_imgs/Wendy_scan3_right_front_arch.png)
 ![arch3](../../resources/feet_imgs/Whitney_scan3_left_back_arch.png)
 ![arch3](../../resources/feet_imgs/Yanina_scan2_left_back_arch.png)
 
