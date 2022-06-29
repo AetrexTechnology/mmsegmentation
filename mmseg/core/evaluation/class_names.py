@@ -267,7 +267,6 @@ def stare_palette():
 def feetarch_palette():
     return [[120,120,120],[255, 0, 0]]
 
-
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
     'ade': ['ade', 'ade20k'],
