@@ -264,6 +264,9 @@ def stare_palette():
     """STARE palette for external use."""
     return [[120, 120, 120], [6, 230, 230]]
 
+def feetarch_palette():
+    return [[120,120,120],[128, 64, 128]]
+
 
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
@@ -278,7 +281,8 @@ dataset_aliases = {
         'coco_stuff164k'
     ],
     'isaid': ['isaid', 'iSAID'],
-    'stare': ['stare', 'STARE']
+    'stare': ['stare', 'STARE'],
+    'feetarch': ['feetarch']
 }
 
 
