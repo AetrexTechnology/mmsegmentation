@@ -7,7 +7,7 @@ import cv2
 import numpy as np
 
 '''
-This python script run in Windows system.
+This python script runs in Windows system.
 It may need a few modification for running in Linux system
 '''
 
