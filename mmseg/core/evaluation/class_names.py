@@ -265,7 +265,7 @@ def stare_palette():
     return [[120, 120, 120], [6, 230, 230]]
 
 def feetarch_palette():
-    return [[120,120,120],[128, 64, 128]]
+    return [[120,120,120],[255, 0, 0]]
 
 
 dataset_aliases = {
