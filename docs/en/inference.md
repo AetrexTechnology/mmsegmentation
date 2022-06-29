@@ -1,6 +1,6 @@
 ## Inference with pretrained models
 
-The testing script 'arch_segmentation.py' is in folder demo. We can run the following commands to obtain the arch boundary in a color image. 
+The testing script 'arch_segmentation.py' is in the folder demo. We can run the following commands to obtain the arch boundary in a color image. 
 
 ```shell
 python demo/arch_segmentation.py ${CONFIG_FILE} ${CHECKPOINT_FILE} --img-path ${INPUT_DIR} --show-dir ${OUTPUT_DIR} 
@@ -37,3 +37,4 @@ Some segmentation results are shown below:
 ![arch3](../../resources/feet_imgs/Whitney_scan3_left_back_arch.png)
 ![arch3](../../resources/feet_imgs/Yanina_scan2_left_back_arch.png)
 
+A pickle file 'output.pkl' is generated in the folder ${OUTPUT_DIR}, which contains the list of numpy 2d array, each encoding the arch boundary.
