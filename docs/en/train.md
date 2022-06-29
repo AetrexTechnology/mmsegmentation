@@ -75,7 +75,7 @@ After preparing all configs, we use `dist_train.sh` to launch training jobs. We 
 ```shell
 CONFIG_FILE = 'your path'/mmsegmentation/configs/point_rend/point_rend_r101_512x512_160k_feetarch5k.py
 GPU_NUM = 2
-WORK_DIR = 'optional. you can setup the output directory'
+WORK_DIR = 'optional. you can specify the output directory'
 CHECKPOINT_FILE = 'optional. you can specify a pretrained model or a checkpoint file'
 
 CUDA_VISIBLE_DEVICES=0,1,2,3 sh tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} --work-dir ${WORK_DIR} --load-from ${CHECKPOINT_FILE}
