@@ -68,13 +68,15 @@ sh tools/dist_train.sh configs/pspnet/pspnet_r50-d8_512x512_80k_ade20k.py 8 --wo
 ln -s ${YOUR_WORK_DIRS} ${MMSEG}/work_dirs
 ```
 
-#### Launch multiple jobs on a single machine
+### Train for segmentation of feet arch
 
-If you launch multiple jobs on a single machine, e.g., 2 jobs of 4-GPU training on a machine with 8 GPUs, you need to specify different ports (29500 by default) for each job to avoid communication conflict. Otherwise, there will be error message saying `RuntimeError: Address already in use`.
-
-If you use `dist_train.sh` to launch training jobs, you can set the port in commands with environment variable `PORT`.
+After preparing all configs, we use `dist_train.sh` to launch training jobs. We can set some environment variables in commands.
 
 ```shell
-CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29500 sh tools/dist_train.sh ${CONFIG_FILE} 4
-CUDA_VISIBLE_DEVICES=4,5,6,7 PORT=29501 sh tools/dist_train.sh ${CONFIG_FILE} 4
+CONFIG_FILE = 'your path'/mmsegmentation/configs/point_rend/point_rend_r101_512x512_160k_feetarch5k.py
+GPU_NUM = 2
+WORK_DIR = 'optional. you can setup the output directory'
+CHECKPOINT_FILE = 'optional. you can specify a pretrained model or a checkpoint file'
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 sh tools/dist_train.sh ${CONFIG_FILE} ${GPU_NUM} --work-dir ${WORK_DIR} --load-from ${CHECKPOINT_FILE}
 ```
