@@ -23,3 +23,8 @@ mmsegmentation
 │   │   ├── val_list.txt
 
 ```
+
+The example of an original RGB image and its segmentation annotation is given as follows:
+
+![RGB](../../resources/feet_imgs/Tia_scan3_left_front.png)
+![ANN](../../resources/feet_imgs/Tia_scan3_left_front_ann.png)
