@@ -8,7 +8,7 @@ mmsegmentation
 ├── tools
 ├── configs
 ├── data
-│   ├── feet_arch
+│   ├── arch_scans_324
 │   │   ├── train_set
 │   │   │   ├── images
 |   |   |   |   ├── xxx{img_suffix}
