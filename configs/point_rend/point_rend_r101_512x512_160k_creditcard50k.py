@@ -1,8 +1,8 @@
 _base_ = [
     'C:/Users/zliu/Utilities/OpenMMLab/mmsegmentation/configs/_base_/models/pointrend_r50.py',
+    'C:/Users/zliu/Utilities/OpenMMLab/mmsegmentation/configs/_base_/datasets/creditcard50k.py',
+    'C:/Users/zliu/Utilities/OpenMMLab/mmsegmentation/configs/_base_/schedules/schedule_160k.py',
     'C:/Users/zliu/Utilities/OpenMMLab/mmsegmentation/configs/_base_/default_runtime.py',
-    'C:/Users/zliu/Projects/openmmlab/configs/mmseg_configs/datasets/creditcard50k.py',
-    'C:/Users/zliu/Projects/openmmlab/configs/mmseg_configs/schedules/schedule_160k.py'
 ]
 norm_cfg = dict(type='SyncBN', requires_grad=True)
 model = dict(
