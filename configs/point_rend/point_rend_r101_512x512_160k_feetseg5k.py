@@ -1,8 +1,8 @@
 _base_ = [
     'C:/Users/zliu/Projects/mmsegmentation/configs/_base_/models/pointrend_r50.py',
-    'C:/Users/zliu/Projects/mmsegmentation/configs/_base_/default_runtime.py',
-    'C:/Users/zliu/Projects/configs/mmseg_configs/datasets/feetseg5k.py',
-    'C:/Users/zliu/Projects/configs/mmseg_configs/schedules/schedule_160k.py'
+    'C:/Users/zliu/Projects/mmsegmentation/configs/_base_/datasets/feetseg5k.py',
+    'C:/Users/zliu/Projects/mmsegmentation/configs/_base_/schedules/schedule_160k.py',
+    'C:/Users/zliu/Projects/mmsegmentation/configs/_base_/default_runtime.py'
 ]
 norm_cfg = dict(type='BN', requires_grad=True)
 model = dict(
