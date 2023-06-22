@@ -7,13 +7,13 @@ from .custom import CustomDataset
 
 @DATASETS.register_module()
 class MyFeetSegDataset(CustomDataset):
-    """feet segmentation dataset. 0 stands for background, 1 for left foot, 2 for right foot
-    which is included in 3 categories.
+    """feet segmentation dataset. 0 stands for background, 1 for foot
+    which is included in 2 categories.
     """
 
-    CLASSES = ('background','left foot', 'right foot')
+    CLASSES = ('background','feet')
 
-    PALETTE = [[120,120,120],[128, 64, 128], [192, 96, 128]]
+    PALETTE = [[120,120,120],[255, 64, 128]]
 
     def __init__(self,
                  img_suffix='.jpg',
